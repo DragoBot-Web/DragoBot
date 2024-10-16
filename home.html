@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DragoBot | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="imag/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8DJKXr45v9nv8Fd7Ob6ZNOX+NIBZZF/d2i48m" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="imag/logo.jpg" alt="DragoBot Logo">
+                <h1>DragoBot</h1>
+            </div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="commands.html">Commands</a></li>
+            </ul>
+        </nav>
+
+        <nav class="navbar">
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+        
+        <!-- Meniul lateral -->
+        <div id="side-menu" class="side-menu">
+            <ul>
+                <li><a href="https://youtube.com/@Andrei07" target="_blank">➔YouTube</a></li>
+                <li><a href="https://discord.com" target="_blank">➔Discord</a></li>
+                <li><a href="https://www.instagram.com/andrei._.insta07/" target="_blank">➔Instagram</a></li>
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Caută...">
+                </div>            
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+
+
+        <section class="hero">
+            <h2>Official <span>DragoBot</span> WebSite</h2>
+        </section>
+
+        <section class="invite">
+            <img src="imag/logo.jpg" alt="DragoBot Logo" class="invite-image">
+            <h3>DragoBot</h3>
+            <p>Acest bot încă este în dezvoltare</p>
+            <a href="https://discord.com/oauth2/authorize?client_id=1281199090360651819&permissions=8&integration_type=0&scope=bot" class="btn">Invite</a>
+        </section>
+        
+
+        <section class="donate">
+            <img src="imag/donate.png" alt="Donate Icon">
+            <h3>Susține Proiectul</h3>
+            <p>Dacă vrei să ajuți la susținerea site-ului, poți dona aici</p>
+            <a href="https://www.tipeeestream.com/andrei07/" class="dbtn">Donate</a>
+        </section>
+
+        <section class="commands">
+            <img src="imag/commands.png" alt="Donate Icon">
+            <h3>Commands</h3>
+            <p>        Apasa pe butonul de mai jos pentru a vedea comenzile disponibile
+            </p>
+            <a href="commands.html" class="cbtn">Commands</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 DragoBot. Toate drepturile rezervate.</p>
+            <ul class="socials">
+                <li><a href="https://youtube.com/@Andrei07" target="_blank"><img src="social_icon/youtube.png" alt="YouTube" class="social-icon"></a></li>
+                <li><a href="https://discord.com" target="_blank"><img src="social_icon/discord.png" alt="Discord" class="social-icon"></a></li>
+                <li><a href="https://www.instagram.com/andrei._.insta07/" target="_blank"><img src="social_icon/instagram.png" alt="Instagram" class="social-icon"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="java.js"></script>
+</body>
+</html>

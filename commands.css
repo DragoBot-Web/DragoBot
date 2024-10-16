@@ -1,0 +1,339 @@
+/* Resetare stiluri implicite */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111; /* Fundal negru */
+    color: #FFD700; /* Text galben */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;}
+
+/* Layout responsive */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .hero h2 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .invite img {
+        width: 150px;
+    }
+
+    .btn, .dbtn {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+
+/* Header */
+header {
+    background-color: #111; /* Negru închis */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #FFD700;
+    position: relative;
+    z-index: 100;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap; /* Permite meniu să se împartă pe linii */
+}
+
+nav ul li a {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover, .active {
+    background-color: #ffd700;
+    color: #000;
+}
+/* Stil pentru navbar */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+}
+
+/* Buton hamburger pentru deschiderea meniului */
+.menu-toggle {
+    font-size: 2em;
+    cursor: pointer;
+    color: #ffd700;
+}
+
+/* Meniul lateral mic */
+.side-menu {
+    position: fixed;
+    top: 100px;
+    right: -300px; /* Ascuns inițial în afara ecranului */
+    width: 200px;
+    height: auto;
+    background-color: #222;
+    box-shadow: -2px 2px 40px #FFD700; /* Umbră galbenă */
+    transition: right 0.2s ease;
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Listă de butoane */
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    color: #FFD700;
+    font-size: 1.2em;
+    display: block;
+}
+
+.side-menu ul li input {
+    width: 90%;
+    padding: 8px;
+    margin: 10px auto;
+    border: none;
+    background-color: #ffd700;
+    color: #ffd700;
+    border-radius: 5px;
+}
+
+/* Când meniul este deschis */
+.menu-open .side-menu {
+    right: 20px; /* Aduce meniul în dreapta */
+}
+
+/* Stiluri pentru Search Bar */
+.search-bar {
+    position: relative; /* Pozitionare relativă pentru a permite pozitionarea elementelor interne */
+    margin: 20px 0; /* Marja de sus și jos */
+}
+
+.search-bar input {
+    width: 100%; /* Lățimea căutării va ocupa întreaga lățime disponibilă */
+    padding: 10px 15px; /* Padding pentru a face textul mai ușor de citit */
+    border: 2px solid #FFD700; /* Bordura galbenă */
+    border-radius: 25px; /* Colțuri rotunjite */
+    background-color: #ffd700; /* Fundalul căutării */
+    color: #fff; /* Culoarea textului */
+    font-size: 1em; /* Dimensiunea textului */
+    transition: border-color 0.3s ease; /* Tranziție pentru bordură */
+}
+
+.search-bar input:focus {
+    outline: none; /* Elimină conturul implicit */
+    border-color: #FFD700; /* Schimbă culoarea bordurii la focus */
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.6); /* Adaugă o umbră galbenă */
+}
+
+.search-bar input::placeholder {
+    color: #aaa; /* Culoarea textului de placeholder */
+    opacity: 1; /* Opacitate completă pentru placeholder */
+}
+
+.logo h1 {
+    position: absolute;
+    top: 10px;
+    width: 59px;
+    right: 93%;
+}
+
+/* Animație pentru logo */
+.logo img {
+    position: absolute;
+    top: 0%;
+    width: 59px;
+    left: 14px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: rotate(360deg); /* Rotire la hover */
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to top, #111, #222); /* Gradient de la negru la gri închis */
+
+    color: #FFD700;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 4em;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    color: #FFF;
+}
+  
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #000;
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FFD700;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #e6c200;
+}
+
+  /* Footer */
+  footer {
+    background-color: #111;
+    color: #FFD700;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #FFD700;
+    margin-top: auto;
+}
+
+.socials {
+    display: flex; /* Aranjează logourile pe aceeași linie */
+    justify-content: center; /* Centrează logourile în footer */
+    list-style: none; /* Elimină marcajele implicite ale listelor */
+    padding: 0; /* Elimină padding-ul implicit */
+}
+
+.socials li {
+    margin: 0 1px; /* Spațiu între logouri */
+}
+
+.social-icon {
+    width: 30px; /* Dimensiune logo */
+    height: auto; /* Întreținerea proporțiilor */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Efect de tranziție la hover */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Efect de mărire la hover */
+    filter: drop-shadow(0 0 5px yellow); /* Adaugă umbra galbenă */
+}
+
+.u-commands {
+    position: relative;
+    left: 10%;
+    background-color: #222;
+    color: #FFD700;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #FFD700; /* Umbra galbenă */
+    width: 20%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.u-commands h2 {
+    font-size: 1.8em;
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+
+.u-commands p {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.a-commands {
+    position: relative;
+    right:  12%;
+    top: -556px;
+    background-color: #222;
+    color: #FFD700;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #FFD700; /* Umbra galbenă */
+    width: 20%;
+    margin: 25px auto;
+    text-align: center;
+
+}
+
+.a-commands h2 {
+    font-size: 1.8em;
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+
+.a-commands p {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.g-commands {
+    position: absolute;
+    right: 41%;
+    top: 115%;
+    background-color: #222;
+    color: #FFD700;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #FFD700; /* Umbra galbenă */
+    width: 20%;
+    margin: 25px auto;
+    text-align: center;
+
+}
+
+.g-commands h2 {
+    font-size: 1.8em;
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+
+.g-commands p {
+    font-size: 1.2em;
+    color: #fff;
+}
