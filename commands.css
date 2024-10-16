@@ -19,29 +19,6 @@
     }
 }
 
-/* Stiluri pentru ecrane mari, de ex. PC */
-@media only screen and (min-width: 601px) {
-    body {
-        font-size: 18px;
-    }
-    .container {
-        width: 80%;
-        margin: auto;
-    }
-}
-
-.container {
-    display: flex;
-    flex-direction: row; /* Pe PC elementele sunt afișate pe orizontală */
-}
-
-@media (max-width: 600px) {
-    .container {
-        flex-direction: column; /* Pe telefon, elementele sunt afișate pe verticală */
-    }
-}
-
-
 body {
     background-color: #111; /* Fundal negru */
     color: #FFD700; /* Text galben */
