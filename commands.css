@@ -163,7 +163,7 @@ nav ul li a:hover, .active {
     padding: 10px 15px; /* Padding pentru a face textul mai ușor de citit */
     border: 2px solid #FFD700; /* Bordura galbenă */
     border-radius: 25px; /* Colțuri rotunjite */
-    background-color: #ffd700; /* Fundalul căutării */
+    background-color: #222; /* Fundalul căutării */
     color: #fff; /* Culoarea textului */
     font-size: 1em; /* Dimensiunea textului */
     transition: border-color 0.3s ease; /* Tranziție pentru bordură */
